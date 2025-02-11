@@ -1,4 +1,4 @@
-https://github.com/PetrovYegor/Hangman
+https://github.com/PetrovYegor/Hangman  
 [Егор Петров]
 
 Игра в процедурном стиле, состоит из двух классов.
@@ -65,7 +65,7 @@ if (isWin()) {
 }
 ```
 
-**5. Какая-то сложная неочевидная логика**, секретное слово преобразуется в хэшмап, где ключ это буква, а значение это цифра. Цифра означает количество таких букв в слове
+**5. Какая-то сложная неочевидная логика:** секретное слово преобразуется в хэшмап, где ключ это буква, а значение это цифра. Цифра означает количество таких букв в слове
 ```
 private static void initializeLettersOfGuessingWord(String word) {
   for (int i = 0; i < word.length(); i++) {
@@ -112,10 +112,10 @@ private static boolean isRussianAlphabetLetter(char source) {
 }
 
 //ЛУЧШЕ:
-  private static boolean isRussianAlphabetLetter(char c) {
-    c = Character.toLowerCase(c);
-    return c=='ё' || c >= 'а' && c <= 'я';
-  }
+private static boolean isRussianAlphabetLetter(char c) {
+  c = Character.toLowerCase(c);
+  return c=='ё' || c >= 'а' && c <= 'я';
+}
 ```
 
 **7. class GallowsDrawing**
@@ -123,15 +123,15 @@ private static boolean isRussianAlphabetLetter(char source) {
 + (+)Отдельный класс с картинками хангмана и методом их распечатки, это хорошо.
 
 - Хранить картинки в енаме, а потом грузить из в хешмап- избыточно. Достаточно хранить картинки в масстве, а доступ к ним- по индексу. 
-В принципе енам + хешмап в твоей реализации выполняет функцию простого массива
+В принципе енам + хешмап в твоей реализации выполняют функцию простого массива
 ```
 private static final Map<Integer, GallowsStates> numberedGallowStates;
 
-  static {
-    numberedGallowStates = new HashMap<>();
-    numberedGallowStates.put(0, GallowsStates.DEFAULT);
-    //oths
-  }
+static {
+  numberedGallowStates = new HashMap<>();
+  numberedGallowStates.put(0, GallowsStates.DEFAULT);
+  //еще миллион строк
+}
 
 private enum GallowsStates {
   DEFAULT("""
