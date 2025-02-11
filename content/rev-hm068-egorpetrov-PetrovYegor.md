@@ -180,7 +180,7 @@ private static final String[] PICTURES = {
    // more pics
 };
 
-void printPicture(int numPicture) {  
+public void printPicture(int numPicture) {  
    System.out.println(PICTURES[numPicture]);
 }
 ```
