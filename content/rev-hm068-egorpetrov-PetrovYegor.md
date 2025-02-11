@@ -157,30 +157,31 @@ public static void drawCurrentGallowsState(int stateNumber) {
 }
 
 //ПРАВИЛЬНО:
-private static final String[][] PICTURES = {
-    {
-    "-----   ",
-    "|       ",
-    "|       ",
-    "|       ",
-    "|       ",
-    "|       ",
-    "------- ",
-   },
-   {
-     "-----   ",
-     "|   |   ",
-     "|   O   ",
-     "|       ",
-     "|       ",
-     "|       ",
-     "------- ",
-   },
+private static final String[] PICTURES = {
+    """
+    -----   
+    |       
+    |       
+    |       
+    |       
+    |       
+    ------- 
+    """,
+   """
+     -----   
+     |   |   
+     |   O   
+     |       
+     |       
+     |       
+     ------- 
+     """
+   ,
    // more pics
 };
 
-public String[] get(int numPicture) {  
-  return PICTURES[numPicture]; 
+void printPicture(int numPicture) {  
+   System.out.println(PICTURES[numPicture]);
 }
 ```
 
