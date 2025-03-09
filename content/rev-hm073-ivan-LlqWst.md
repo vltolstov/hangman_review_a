@@ -17,7 +17,6 @@ https://github.com/LlqWst/HangMan_Java.git
 Ввод должн быть без одинарных кавычек
 ```
 
-
 ## ХОРОШО
 
 + 👍 Игра запускается
@@ -42,11 +41,9 @@ List<String> words = readWordsFromFile();
 К тому же здесь избыточный контекст
 ```
 int getRandInt(int linesNumber)
-char getLowCaseChar(String playerInput)
 
 //ПРАВИЛЬНО:
 int getRandom(int linesNumber)
-char getLowerCaseChar(String playerInput)
 ```
 
 - С большой буквы пишутся только названия классов
@@ -260,6 +257,8 @@ if (isDuplicatedIncorrectChar(inputChar, incorrectCharsList)) {
 ```
 
 ## ВЫВОД
+
+Для процедурного стиля приемлемо.
 
 n.73(138)  
 #ревью #виселица
