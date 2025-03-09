@@ -219,7 +219,7 @@ private static boolean isInputCorrect(String PlayerInput) {
 }
 ```
 
-**8. Избыточно**, слово `maskWord` содержит 8 букв, а `return` - только 6. Поэтому `maskWord` здесь не подходит на роль поясняющей переменной. Еще лучше `tempString`(дважды неудачное название) переименовать на `result`;
+**8. Избыточно**, слово `maskWord` содержит 8 букв, а `return` - только 6. Поэтому `maskWord` здесь не подходит на роль поясняющей переменной. Еще лучше `tempString`(дважды неудачное название) переименовать на `result`
 ```
 StringBuilder tempString = new StringBuilder(maskWord);
 //...
