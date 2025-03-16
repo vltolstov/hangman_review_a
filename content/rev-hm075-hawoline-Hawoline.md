@@ -198,7 +198,7 @@ for (int rowInOneState = 0; rowInOneState < 5; rowInOneState++) {
 }
 
 //ПРАВИЛЬНО:
-String picture = states[mistakes.getCountOfMistakes()];
+String[] picture = states[mistakes.getCountOfMistakes()];
 for (int row = 0; row < picture.length; row++) {
   System.out.println(picture[row]);
 }
@@ -239,4 +239,4 @@ final RightLettersInWord rightLettersInWordAfterTap = rightLettersInWord.perform
 Видно, что есть опыт и понимание программирования. Разбирать проект мне понравилось.
 
 n.75(141)  
-#ревью #виселица #immutable #cleanarchitecture #ооп
+#ревью #виселица #immutable #cleanarchitecture #оопвиселица
